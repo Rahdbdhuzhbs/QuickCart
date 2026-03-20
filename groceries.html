@@ -1,0 +1,85 @@
+ <!doctype html>
+ <html lang="en">
+ <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>QuickKart • Groceries</title>
+   <link rel="stylesheet" href="assets/css/styles.css" />
+ </head>
+ <body data-page="groceries">
+   <header class="nav">
+     <div class="container nav-inner">
+       <a class="brand" href="index.html">QuickKart</a>
+       <nav class="nav-links">
+         <a href="index.html" data-nav="home">Home</a>
+         <a href="food.html" data-nav="food">Food</a>
+         <a href="groceries.html" data-nav="groceries">Groceries</a>
+         <a href="products.html" data-nav="products">Products</a>
+         <a href="eproducts.html" data-nav="eproducts">E‑Products</a>
+         <a href="compare.html" data-nav="compare">Compare</a>
+         <a href="admin.html" data-nav="admin">Admin</a>
+         <a class="pill" href="cart.html" data-nav="cart">Cart <span class="cart-count" data-cart-count>0</span></a>
+       </nav>
+     </div>
+   </header>
+ 
+   <main class="page">
+     <div class="container">
+       <div class="page-head">
+         <div>
+           <h1 class="page-title">Groceries</h1>
+           <p class="page-note">Add items to cart or open Compare to check on other sites.</p>
+         </div>
+         <div class="toolbar">
+           <label class="field">
+             <span class="small">Search</span>
+             <input data-search placeholder="e.g., rice" />
+           </label>
+           <label class="field">
+             <span class="small">Sort</span>
+             <select data-sort>
+               <option value="popular">Popular</option>
+               <option value="price-asc">Price: Low → High</option>
+               <option value="price-desc">Price: High → Low</option>
+               <option value="name">Name</option>
+             </select>
+           </label>
+         </div>
+       </div>
+ 
+       <div class="page-layout">
+         <aside class="sidebar">
+           <div class="sidebar-block">
+             <h3 class="sidebar-title">Categories</h3>
+             <div class="category-list">
+               <button class="category-btn" data-subcat-btn="">All</button>
+               <button class="category-btn" data-subcat-btn="Rice">Rice</button>
+               <button class="category-btn" data-subcat-btn="Cereals">Cereals</button>
+               <button class="category-btn" data-subcat-btn="Pulses">Pulses</button>
+               <button class="category-btn" data-subcat-btn="Fruits">Fruits</button>
+               <button class="category-btn" data-subcat-btn="Vegetables">Vegetables</button>
+               <button class="category-btn" data-subcat-btn="Sugars">Sugars</button>
+               <button class="category-btn" data-subcat-btn="Spices">Spices</button>
+               <button class="category-btn" data-subcat-btn="Cooking Powders">Cooking Powders</button>
+             </div>
+             <select data-food-subcat style="display:none">
+               <option value="">All</option>
+               <option value="Rice">Rice</option>
+               <option value="Cereals">Cereals</option>
+               <option value="Pulses">Pulses</option>
+               <option value="Fruits">Fruits</option>
+               <option value="Vegetables">Vegetables</option>
+               <option value="Sugars">Sugars</option>
+               <option value="Spices">Spices</option>
+               <option value="Cooking Powders">Cooking Powders</option>
+             </select>
+           </div>
+         </aside>
+         <section class="grid" data-products></section>
+       </div>
+     </div>
+   </main>
+ 
+   <script src="assets/js/app.js"></script>
+ </body>
+ </html>

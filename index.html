@@ -1,0 +1,54 @@
+ <!doctype html>
+ <html lang="en">
+ <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>QuickKart • Home</title>
+   <link rel="stylesheet" href="assets/css/styles.css" />
+ </head>
+ <body data-page="home">
+   <header class="nav">
+     <div class="container nav-inner">
+       <a class="brand" href="index.html">QuickKart</a>
+       <nav class="nav-links">
+         <a href="index.html" data-nav="home">Home</a>
+         <a href="food.html" data-nav="food">Food</a>
+         <a href="groceries.html" data-nav="groceries">Groceries</a>
+         <a href="products.html" data-nav="products">Products</a>
+         <a href="eproducts.html" data-nav="eproducts">E‑Products</a>
+         <a href="compare.html" data-nav="compare">Compare</a>
+         <a href="admin.html" data-nav="admin">Admin</a>
+         <a class="pill" href="cart.html" data-nav="cart">Cart <span class="cart-count" data-cart-count>0</span></a>
+       </nav>
+     </div>
+   </header>
+ 
+   <main class="hero">
+     <div class="hero-panels" aria-hidden="true">
+       <div class="panel red"></div>
+       <div class="panel green"></div>
+       <div class="panel yellow"></div>
+     </div>
+ 
+     <div class="hero-overlay">
+       <div class="hero-card">
+         <h1 class="hero-title">Food 🍔 | Groceries 🛒 | E‑Products 📦</h1>
+         <p class="hero-sub">Compare &amp; buy at the best deal</p>
+ 
+         <div class="cta-row">
+           <button class="btn dark" data-go="food.html">Buy Food</button>
+           <button class="btn light" data-go="groceries.html">Buy Groceries</button>
+           <button class="btn mid" data-go="products.html">Buy Products</button>
+           <button class="btn accent" data-go="compare.html">Compare &amp; Buy</button>
+         </div>
+ 
+         <div class="searchbar">
+           <input data-home-search placeholder="Search for food, groceries or products…" aria-label="Search products" />
+         </div>
+       </div>
+     </div>
+   </main>
+ 
+   <script src="assets/js/app.js"></script>
+ </body>
+ </html>

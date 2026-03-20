@@ -1,0 +1,49 @@
+ <!doctype html>
+ <html lang="en">
+ <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>QuickKart • Cart</title>
+   <link rel="stylesheet" href="assets/css/styles.css" />
+ </head>
+ <body data-page="cart">
+   <header class="nav">
+     <div class="container nav-inner">
+       <a class="brand" href="index.html">QuickKart</a>
+       <nav class="nav-links">
+         <a href="index.html" data-nav="home">Home</a>
+         <a href="food.html" data-nav="food">Food</a>
+         <a href="groceries.html" data-nav="groceries">Groceries</a>
+         <a href="products.html" data-nav="products">Products</a>
+         <a href="eproducts.html" data-nav="eproducts">E‑Products</a>
+         <a href="compare.html" data-nav="compare">Compare</a>
+         <a href="admin.html" data-nav="admin">Admin</a>
+         <a class="pill" href="cart.html" data-nav="cart">Cart <span class="cart-count" data-cart-count>0</span></a>
+       </nav>
+     </div>
+   </header>
+ 
+   <main class="page">
+     <div class="container">
+       <div class="page-head">
+         <div>
+           <h1 class="page-title">Your cart</h1>
+           <p class="page-note">Quantities are saved in your browser (localStorage).</p>
+         </div>
+       </div>
+ 
+       <div class="cart">
+         <section class="panel-card" style="padding:14px;">
+           <div class="tag">Items</div>
+           <div style="height:12px"></div>
+           <div style="display:grid; gap:10px;" data-cart-items></div>
+         </section>
+         <aside data-cart-summary></aside>
+       </div>
+     </div>
+   </main>
+ 
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+   <script src="assets/js/app.js"></script>
+ </body>
+ </html>

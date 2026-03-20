@@ -1,0 +1,64 @@
+ <!doctype html>
+ <html lang="en">
+ <head>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <title>QuickKart • Compare</title>
+   <link rel="stylesheet" href="assets/css/styles.css" />
+ </head>
+ <body data-page="compare">
+   <header class="nav">
+     <div class="container nav-inner">
+       <a class="brand" href="index.html">QuickKart</a>
+       <nav class="nav-links">
+         <a href="index.html" data-nav="home">Home</a>
+         <a href="food.html" data-nav="food">Food</a>
+         <a href="groceries.html" data-nav="groceries">Groceries</a>
+         <a href="products.html" data-nav="products">Products</a>
+         <a href="eproducts.html" data-nav="eproducts">E‑Products</a>
+         <a href="compare.html" data-nav="compare">Compare</a>
+         <a class="pill" href="cart.html" data-nav="cart">Cart <span class="cart-count" data-cart-count>0</span></a>
+       </nav>
+     </div>
+   </header>
+ 
+   <main class="page">
+     <div class="container">
+       <div class="page-head">
+         <div>
+           <h1 class="page-title">Compare products</h1>
+           <p class="page-note" data-compare-note>Choose an item to compare.</p>
+         </div>
+         <div class="toolbar">
+           <label class="field">
+             <span class="small">Product</span>
+             <select data-compare-select></select>
+           </label>
+         </div>
+       </div>
+ 
+       <div class="compare-grid">
+         <section class="panel-card">
+           <div class="tag">Comparison links</div>
+           <h3 style="margin:10px 0 6px;">Check prices on other websites</h3>
+           <div class="small muted">Open the site search results for the selected product.</div>
+           <div class="compare-links" data-compare-links></div>
+         </section>
+ 
+         <aside class="panel-card">
+           <div class="tag">How it works</div>
+           <h3 style="margin:10px 0 6px;">Why links (not live prices)?</h3>
+           <p class="page-note" style="margin-top:0;">
+             This mini project is pure HTML/CSS/JS, so live price scraping is blocked by browser security (CORS) and site rules.
+             The compare feature generates safe search links for Amazon, Flipkart, Blinkit, etc.
+           </p>
+           <div style="height:8px"></div>
+           <a class="btn-sm primary" href="products.html">Browse products</a>
+         </aside>
+       </div>
+     </div>
+   </main>
+ 
+   <script src="assets/js/app.js"></script>
+ </body>
+ </html>
